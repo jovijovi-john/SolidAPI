@@ -26,7 +26,5 @@ export class CreateUserController {
         message: err.message || "Unexpected error."
       })
     }
-
-    return 
   }
 }

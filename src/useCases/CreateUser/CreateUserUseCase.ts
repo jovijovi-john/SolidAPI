@@ -8,8 +8,9 @@ export class CreateUserUseCase {
   private usersRepository: IUsersRepository;
   private mailProvider: IMailProvider;
 
-  constructor(usersRepository: IUsersRepository) {
+  constructor(usersRepository: IUsersRepository, mailProvider: IMailProvider) {
     this.usersRepository = usersRepository;
+    this.mailProvider = mailProvider;
   }
 
   // receberá alguns dados, e retornará alguns dados no final
@@ -23,7 +24,7 @@ export class CreateUserUseCase {
     const user = new User(data);  
     await this.usersRepository.save(user);
 
-    this.mailProvider.sendMail({
+    await this.mailProvider.sendMail({
       to: {
         name: data.name,
         email: data.email

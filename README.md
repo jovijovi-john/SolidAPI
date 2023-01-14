@@ -27,6 +27,10 @@
 
   - Repositórios são classes específicas para comunicação entre as funcionalidades da aplicação com o banco de dados
 
+  - -> /implementations:
+
+    - Como o nome sugere, dentro dessa pasta teremos as implementações das nossas abstrações
+  
 - useCases:
 
   - Onde ficam as funcionalidades, ações que o usuário pode executar na aplicação, a lógica, a regra de negócio
@@ -34,4 +38,8 @@
 - providers:
 
   - É como se fosse os repositórios, so que lá é para armazenamento de dados, aqui é para comunicação com coisas externas (api, envio de email...)
+
+  - -> /implementations:
+
+    - Como o nome sugere, dentro dessa pasta teremos as implementações das nossas abstrações
   
