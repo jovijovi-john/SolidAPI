@@ -43,3 +43,8 @@
 
     - Como o nome sugere, dentro dessa pasta teremos as implementações das nossas abstrações
   
+## Principais Conceitos a serem estudados para aplicar em api's
+
+- Liskov Substitution Principle
+- Dependency Inversion Principle  
+- Single Responsability Principle
